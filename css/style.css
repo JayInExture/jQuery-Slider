@@ -1,0 +1,360 @@
+body{
+    box-sizing: content-box;
+}
+
+input{
+    margin-top: 2%;
+    border-radius: 8px;
+}
+
+.input_fileds{
+    background-color: #252525;
+    color: aliceblue;
+    padding: 3% 2%;
+    border-radius: 10px;
+}
+.btn_group{
+    margin-top: 2%;
+
+}
+.btn_group .add_file{
+    border-radius: 10px;
+    background-color: #006aff;
+    color: white;
+    padding: 1%;
+}
+.add_file:active{
+    background-color: #7bff7b;
+    color: #000000;
+}
+
+.btn_group .remove_file{
+    border-radius: 10px;
+    background-color: #ff5549;
+    color: white;
+    padding: 1%;
+}
+.remove_file:active{
+    background-color: #e0ff7b;
+    color: #000000;
+}
+.remove_file:disabled{
+    background-color: #9c9c9c;
+    color: #000000;
+}
+.main_slide{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+.slide_here {
+    width: 50%;
+    margin-top: 2%;
+    position: relative;
+    height: 50dvh;
+}
+.slick-list,.slick-track{
+    height: 100%;
+}
+
+.slide_here div {
+    position: relative;
+  
+}
+
+.slide_here img {
+    width: 100%;
+    height: 100%;
+}
+.slide_here video {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.slide_here h1{
+    white-space: nowrap;
+    position: absolute;
+    top: 2%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center;
+    z-index: 1;   
+    width: 85%;
+    font-size: 1.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+
+.slide_here p {
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 80%;
+    font-size: 1rem;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center;
+    z-index: 1;
+    text-overflow: ellipsis; 
+}
+
+.slick-dotted ul li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+}
+.slick-dots {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 36px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.slick-active{
+    box-shadow: 0px 0px 15px red;
+}
+
+.save_changes{
+    background-color: #42ff42;
+    color: #000000;
+    padding: 1%;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+.preview_modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    z-index: 4;
+}
+
+.preview_content {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 18px  rgb(84, 255, 255);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    width: 80%;
+    color: #ffffff;
+}
+
+.close {
+    margin-left: 95%;
+    color: #ff0000;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.close:hover,
+.close:focus {
+    color: #0084ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 0; 
+}
+
+.slick-prev:before {
+    content: '\2039';
+    font-size: 24px; 
+}
+
+.slick-next:before {
+    content: '\203A'; 
+    font-size: 24px; 
+}
+
+.slick-prev {
+    left: 0; 
+}
+
+.slick-next {
+    right: 0;
+}
+
+
+.slick-track{
+    height: 100%;
+}
+
+.preview_flex{    
+    display: flex;
+    justify-content: center;
+}
+.preview_input_group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.preview_input_group input, .preview_input_group select{
+    margin-bottom: 4%;
+}
+.img_video_preview{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img_video_preview img, .img_video_preview video{
+    width: 50%;
+    height: auto;
+}
+
+.error_div {
+    display: none;
+    width: auto;
+    position: fixed;
+    bottom: 6%;
+    right: 1%; 
+    z-index: 3;
+    font-size: 1.5rem;
+}
+
+
+.error_div .error_div_close{
+    box-sizing: content-box;
+    color: #ff0000;
+    font-weight: 900;
+}
+.alert {
+    position: fixed;
+    margin: auto;
+    width: 18%;
+    right: 1%;
+    bottom: 0%;
+    padding: 3%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert-primary {
+    color: #000000;
+    background-color: #f8ff91;
+    border-color: #f8ff91;
+}
+
+@media screen and (max-width: 768px) {
+
+    .slide_here img {
+        width: 100%;
+        height: 100%;
+    }
+    .slide_here video {
+        
+        width: 100%;
+        height: 100%;
+    }
+    .slide_here h1 {
+        font-size: 1.25rem;
+        top: 5%;
+    }
+    
+    .slide_here p {
+        font-size: 0.9rem;
+        top: 15%;
+    }
+    .preview_flex{
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .img_video_preview{
+        margin: 4% 0% 0% 0%;
+    }
+
+    .error_div {
+    bottom: 1%;
+    right: 1%; 
+}
+}
+
+@media screen and (max-width:500px) {
+    .slide_here{
+        width: 100%;
+    }
+    
+    .error_div {
+        bottom: 1%;
+        width: 98%;
+    }
+    .alert{
+        width: auto;
+    }
+}

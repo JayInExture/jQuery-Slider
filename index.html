@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Slider</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/slick css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="error_div">
+        
+
+            <div class="alert alert-primary">
+                At least you have to add one image to use the remove feature.
+                <span class="error_div_close">&times;</span>
+            </div>
+        
+    </div>
+    <div class="input_fileds">
+        <label for="file_upload">Choose File</label>
+        <input id="file_upload" type="file" accept="video/*,image/*"><br>
+        <label for="main_heading">Enter Heading :-</label>
+        <input id="main_heading" type="text" required> <br>
+        <label for="sub_heading">Enter text :-</label>
+        <input id="sub_heading" type="text" required>
+        <div class="btn_group">
+            <button class="add_file">Add image</button>
+            <button class="remove_file">Remove image</button>
+        </div>
+    </div>
+    <div class="main_slide">
+        <div class="slide_here">
+            <div><img src="./images/first-background-1.jpg" alt="Default Image">
+                <h1>Main Heading</h1>
+                <p>Sub Heading</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview_modal">
+        <div class="preview_content">
+            <div>
+                <div class="close">&times;</div>
+            </div>
+            <div class="preview_flex">
+
+                <div class="preview_input_group">
+                    <label for="update_file">Update File</label>
+                    <input id="update_file" type="file" accept="video/*,image/*">
+                    <label for="edit_main_heading">Edit Heading:- </label>
+                    <input id="edit_main_heading" type="text" placeholder="Edit Main Heading">
+                    <label for="edit_sub_heading">Edit Sub Heading:-</label>
+                    <input id="edit_sub_heading" type="text" placeholder="Edit Sub Heading">
+                    <button class="save_changes">Save Changes</button>
+                </div>
+                <div class="img_video_preview"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="./js/index.js" type="module" defer></script>
+</body>
+
+</html>
